@@ -1,0 +1,24 @@
+<%- include ('./partials/header.ejs') %>
+
+
+    <div class="container">
+        <form class="signupForm" method="POST" action="/users/signup">
+            <label for="displayName">Name</label>
+            <input type="text" class="name" autocomplete="off" required placeholder="Name" name="displayName">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Secret" autocomplete="off" required>
+
+            <label for="confirm">Confirm</label>
+            <input type="password" name="confirm" autocomplete="off" required placeholder="confirm">
+
+            <button>Signup</button>
+        </form>
+    </div>
+
+
+
+    <%- include ('./partials/footer.ejs')  %>

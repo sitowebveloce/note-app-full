@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg" href="/img/notebook.svg">
+    <!-- STRINGIFY DATA FROM BACKEND TO FRONT END  -->
+    <script>
+        let user = '<%- user %>';
+        // Handle messages
+        let showMsg;
+        let clearMessage;
+        window.addEventListener('DOMContentLoaded', () => {
+            showMsg = document.querySelector('.msg');
+            // Clear message after 6s
+            clearMessage = () => {
+
+                showMsg.style.padding = '10px';
+                setTimeout(() => {
+                    showMsg.innerHTML = '';
+                    showMsg.style.padding = 0;
+
+                }, 6000);
+            };
+            clearMessage();
+        });
+    </script>
+    </script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="/"><img src="/img/home.svg" alt="home"></a>
+            <h1>Note Veloce</h1>
+            <small>
+            <% if(user !== undefined ){ %>
+             <%= '😷 ' + user %>
+           <% } else{ %>
+
+           <% } %>         
+            
+        </small>
+            <ul>
+                <% if(user !== undefined){ %>
+                    <li><a href="/users/logout">Logout</a></li>
+                    <% } else{ %>
+                        <li><a href="/users/login">Login</a></li>
+                        <li><a href="/users/signup">Signup</a></li>
+                        <% } %>
+            </ul>
+        </div>
+
+        <div class="search">
+            <div class="message">
+                <% if(msg !== undefined) {   %>
+                    <small class="msg"> <%= msg  %>  </small>
+                    <% } %>
+
+            </div>
+
+            <form class="searchForm">
+                <input type="text" name="search" placeholder="search" autocomplete="off" required>
+                <button class="btn_search">Search</button>
+            </form>
+
+        </div>
+    </header>

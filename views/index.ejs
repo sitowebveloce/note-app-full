@@ -1,0 +1,21 @@
+<%- include ('./partials/header.ejs') %>
+
+    <button class="add">+</button>
+    <div class="container"></div>
+    <div class="modal">
+        <form class="addNote">
+            <label for="title">Title</label>
+            <input type="text" required name="title" class="title" autocomplete="off">
+            <label for="note">Note</label>
+            <textarea name="note" class="note" cols="30" rows="10" required></textarea>
+            <button class="submit" type="submit">Submit</button>
+            <a class='back' href="/"><img src="./img/back.svg"></a>
+        </form>
+    </div>
+
+
+
+    <script src="/js/main.js"></script>
+
+
+    <%- include ('./partials/footerIndex.ejs') %>

@@ -1,0 +1,129 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "author": "laura@gmail.com",
+      "date": 603989633084,
+      "title": "Note 1",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione."
+    },
+    {
+      "date": 1604935059500,
+      "author": "laura@gmail.com",
+      "title": "Note 2",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 2
+    },
+    {
+      "date": 1604935102271,
+      "author": "laura@gmail.com",
+      "title": "Note 3",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 3
+    },
+    {
+      "date": 1604935144176,
+      "author": "laura@gmail.com",
+      "title": "Note 4",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 4
+    },
+    {
+      "date": 1604935154633,
+      "author": "laura@gmail.com",
+      "title": "Note 5",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 5
+    },
+    {
+      "date": 1604935165087,
+      "author": "laura@gmail.com",
+      "title": "Note 6",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 6
+    },
+    {
+      "date": 1604935177238,
+      "author": "laura@gmail.com",
+      "title": "Note 7",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 7
+    },
+    {
+      "date": 1604935185068,
+      "author": "laura@gmail.com",
+      "title": "Note 8",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 8
+    },
+    {
+      "date": 1604956962839,
+      "author": "laura@gmail.com",
+      "title": "Note 9",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 9
+    },
+    {
+      "date": 1604995177264,
+      "author": "alessandro@gmail.com",
+      "title": "Note 10",
+      "note": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.",
+      "id": 10
+    },
+    {
+      "date": 1604997375158,
+      "author": "neo@gmail.com",
+      "title": "Note 11",
+      "note": "The built-in Javascript function will round up the number based on standard logic (less and more than 5 to round up).",
+      "id": 11
+    },
+    {
+      "date": 1604997403486,
+      "author": "neo@gmail.com",
+      "title": "Note 12",
+      "note": "The built-in Javascript function will round up the number based on standard logic (less and more than 5 to round up).",
+      "id": 12
+    },
+    {
+      "date": 1605003909770,
+      "author": "neo@gmail.com",
+      "title": "Note 13",
+      "note": "The built-in Javascript function will round up the number based on standard logic (less and more than 5 to round up).",
+      "id": 13
+    }
+  ],
+  "users": [
+    {
+      "displayName": "Laura",
+      "email": "laura@gmail.com",
+      "password": "$2b$10$FbA.UqKm5DSURNpxtVxU6.jd7RrVmQ9c2cAXYe8yR1j03M6/FQnYy",
+      "picture": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "createdAt": 1604742894132,
+      "id": 1
+    },
+    {
+      "displayName": "Alessandro",
+      "email": "alessandro@gmail.com",
+      "password": "$2b$10$eEcLw16Jy4iS/TVCLi59XeKnsqPgNDACd4rXPPJw8iuKCsnX7PBP.",
+      "picture": "",
+      "createdAt": 1604914208386,
+      "id": 2
+    },
+    {
+      "displayName": "Neo",
+      "email": "neo@gmail.com",
+      "password": "$2b$10$CE/6E.vUoLiU1eyqXba3cOdIolMTvqSVk3LVXX7E/VqS9wpFjptK2",
+      "picture": "",
+      "createdAt": 1604995564105,
+      "id": 3
+    },
+    {
+      "displayName": "Trinity",
+      "email": "trinity@gmail.com",
+      "password": "$2b$10$zMMeXJq2m8AUntbZn0nP3.rPytwcbwjYrRVD7LENeJGBj7Co/UHke",
+      "picture": "",
+      "createdAt": 1605018933410,
+      "id": 4
+    }
+  ]
+}

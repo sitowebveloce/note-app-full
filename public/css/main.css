@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300&display=swap');
+:root {
+    --primay: rgb(119, 5, 148);
+    --black: #1b1d22;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(to left, var(--black), var(--primay));
+    font-size: 18px;
+}
+
+header a img {
+    width: 33px;
+    margin: auto 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 40px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, var(--black), var(--primay));
+    z-index: 1;
+}
+
+header div,
+header div ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+header div ul li a {
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+header div h1 {
+    color: rgb(70, 70, 250);
+    font-size: 3.3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header div form input {
+    width: 60%;
+    padding: 5px;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .1;
+    z-index: -1;
+    object-fit: cover;
+}
+
+div.search {
+    width: 100%;
+    height: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+div.search .message,
+div.search .searchForm {
+    margin: auto;
+    padding: 2px;
+}
+
+div.search .message .msg {
+    font-weight: bold;
+    background: #53015a;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container,
+.loginForm,
+.signupForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 88%;
+    height: auto;
+    margin: 180px auto;
+}
+
+.container article {
+    min-width: 80%;
+    background: linear-gradient(to left, #8d0399, var(--primay));
+    margin: 30px auto;
+    padding: 20 50px;
+    border-radius: 2px;
+    animation: circle 10ms linear forwards;
+}
+
+small {
+    font-size: .8rem;
+}
+
+.fetchData {
+    text-align: center;
+}
+
+.fetchData button {
+    margin-bottom: 40px;
+}
+
+@keyframes circle {
+    0% {
+        clip-path: circle(0%);
+    }
+    100% {
+        clip-path: circle(100%);
+    }
+}
+
+a {
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    border: none;
+    font-size: 1.4rem;
+    color: #ffffff;
+    background: var(--primay);
+    margin: 10px;
+}
+
+button.add {
+    position: fixed;
+    top: 198px;
+    right: 80px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+button.delete {
+    background: url(/img/delete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 45px;
+    color: #ffffff;
+    float: right;
+    padding: 5px;
+}
+
+button.send {
+    background: url(/img/send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    color: #ffffff;
+    float: right;
+    padding: 5px;
+    float: left;
+}
+
+a.back img {
+    width: 33px;
+}
+
+button.btn_search {
+    padding: 4px;
+    font-size: 1rem;
+}
+
+button.more {
+    float: right;
+}
+
+.modal {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, var(--black), var(--primay));
+    visibility: hidden;
+}
+
+.modal.show {
+    visibility: visible;
+}
+
+.note {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.modal form,
+.note form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal form input,
+.modal form textarea,
+.note form input,
+.note form textarea {
+    width: 70%;
+    padding: 6px;
+    margin: 10px;
+    outline: none;
+    resize: none;
+}
+
+.modal form input,
+.modal form textarea {
+    background: transparent;
+    border: 1px solid blueviolet;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.note form input,
+.note form textarea {
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.3rem;
+    border: 1px solid blue;
+}
+
+.modal form label {
+    justify-content: flex-end;
+    font-size: 1.3rem;
+}
+
+.container article .date {
+    font-size: 0.89rem;
+    font-weight: bold;
+    color: violet;
+    margin: 5px auto;
+}
+
+.container article h1 {
+    text-align: center;
+}
+
+footer {
+    font-size: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: show 3s linear forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* LOGIN  */
+
+.container .loginForm,
+.container .signupForm {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin: 80px auto;
+}
+
+.container .loginForm input,
+.container .signupForm input {
+    width: 50%;
+    margin: 10px auto;
+    padding: 6px;
+    font-size: 1.1rem;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    transition: 1s ease;
+}
+
+.container .loginForm input:focus,
+.container .loginForm input:active,
+.container .loginForm input:-webkit-autofill,
+.container .loginForm input:-webkit-autofill:focus,
+.container .loginForm input:-webkit-autofill:active,
+.container .signupForm input:focus,
+.container .signupForm input:active,
+.container .signupForm input:-webkit-autofill,
+.container .signupForm input:-webkit-autofill:focus,
+.container .signupForm input:-webkit-autofill:active {
+    border: 1px solid darkslateblue;
+    -webkit-box-shadow: 0 0 0 30px var(--primay) inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.container .loginForm label,
+.container .signupForm label {
+    font-weight: bold;
+    float: left;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    header div h1 {
+        font-size: 1.3rem;
+    }
+    .container article {
+        min-width: 100%;
+    }
+    button.add {
+        top: 100px;
+        right: 0px;
+    }
+}
